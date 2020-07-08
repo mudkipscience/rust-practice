@@ -1,0 +1,5 @@
+- Variables are immutable by default
+- Normal variables can have their value reassigned, mutable variables must keep the same type
+  and immutable variables can have their values reassigned using let again, also allowing you
+  to change the type (shadowing)
+- Constant variables cannot have new variables reassigned to the name they use
