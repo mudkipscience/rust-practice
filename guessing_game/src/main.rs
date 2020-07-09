@@ -11,7 +11,7 @@ fn main() {
     // Generates random number between 0 and 100, thread_rng is the generator we're using
     let number = rand::thread_rng().gen_range(0, 101);
     let mut tries = 1;
-    
+
     println!("Choose a number between 0 and 100: ");
 
     loop {
