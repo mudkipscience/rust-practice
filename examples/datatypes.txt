@@ -1,0 +1,37 @@
+Scalar types:
+- A scalar type represents a single value.
+- Integers:
+  - unsigned: (u8, u16, u32, u64, u128, usize) 
+  - signed: (i8, i16, i32, i64, i128, isize)
+  - defaults to u32
+  - usize/isize change automatically depending on CPU architecture
+- Floating point:
+  - f32, f64
+  - defaults to f64
+- Booleans:
+  - true/false
+- Char:
+  - Defined with '' as opposed to "" (which are used for strings)
+  - Can store unicode characters
+
+Compound types:
+- Compound types can group multiple values into one type. 
+  Rust has two primitive compound types: tuples and arrays.
+- Tuple:
+  - A tuple is a general way of grouping together a number of values with a variety of types into 
+   one compound type. Tuples have a fixed length: once declared, they cannot grow or shrink in size.
+  - We create a tuple by writing a comma-separated list of values inside parentheses. 
+    Each position in the tuple has a type, and the types of the different values in the tuple don’t 
+    have to be the same. 
+
+    okay i cant be bothered typing more: https://doc.rust-lang.org/stable/book/ch03-02-data-types.html
+
+- Arrays:
+  - defined with square brackets []
+  - all elements must be of the same type
+  - fixed length
+  - Arrays are defined like so:
+    - let a: [i32; 5] = [1, 2, 3, 4, 5];
+      - the first square brackets contain the type and the length
+  - Array elements are fetched by using the index of the object a[0] = 1, a[1] = 2, etc
+  

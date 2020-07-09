@@ -1,0 +1,19 @@
+https://doc.rust-lang.org/stable/book/ch03-03-how-functions-work.html
+
+- Rust uses snake case as the standard style for variable and funtion names (like_this)
+- Arguments in rust functions require that you specify the type
+  - Example:
+    - fn main() {
+        another_function(5);
+      }
+
+      fn another_function(x: i32) {
+        println!("The value of x is: {}", x);
+      }
+- Expressions dont end with semicolons
+- Functions automatically return the last line in them as the return value
+- The value of the return value is specified like so:
+  - fn five() -> i32 {
+        5
+    }
+- You can use a return statement to return early
